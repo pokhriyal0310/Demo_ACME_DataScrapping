@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="570,758" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="570,1030" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>Microsoft.VisualBasic</x:String>
@@ -89,7 +89,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Create a process which does the following actions using the Modern Design Experience: &#xA;&#xA;Opens the Edge browser on ACME.  &#xA;Checks if the user is logged into ACME: &#xA;If not, the process: &#xA;Asks the user for the Email and Password. &#xA;Enters the values provided into the fields. &#xA;Click the Login button. &#xA;Else: &#xA;Logs this information and goes to the next step.&#xA;Navigates to the Work Items page. &#xA;Extracts the data from the Work Items Table: WIID, Description, Type, Status and Date.  &#xA;Stores the data in an Excel file using a Workbook Write Range Activity. &#xA;&#xA;Expected Output: An Excel file stored in the project folder, containing the Work Items Table information. " DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="450,693.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Create a process which does the following actions using the Modern Design Experience: &#xA;&#xA;Opens the Edge browser on ACME.  &#xA;Checks if the user is logged into ACME: &#xA;If not, the process: &#xA;Asks the user for the Email and Password. &#xA;Enters the values provided into the fields. &#xA;Click the Login button. &#xA;Else: &#xA;Logs this information and goes to the next step.&#xA;Navigates to the Work Items page. &#xA;Extracts the data from the Work Items Table: WIID, Description, Type, Status and Date.  &#xA;Stores the data in an Excel file using a Workbook Write Range Activity. &#xA;&#xA;Expected Output: An Excel file stored in the project folder, containing the Work Items Table information. " DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="450,965.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="Browser" />
     </Sequence.Variables>
@@ -99,6 +99,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,96" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Start of process&quot;]" />
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login_Into_Acme.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Login_Into_Acme.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="ui:UiElement" x:Key="out_Browser">[Browser]</OutArgument>
@@ -109,5 +110,6 @@
         <InArgument x:TypeArguments="ui:UiElement" x:Key="in_Browser">[Browser]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,96" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;End of process&quot;]" />
   </Sequence>
 </Activity>
