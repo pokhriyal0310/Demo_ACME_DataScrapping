@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>570,934</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>570,1076.66666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_Into_Acme_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -85,11 +85,11 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login_Into_Acme" sap:VirtualizedContainerService.HintSize="546,869.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login_Into_Acme" sap:VirtualizedContainerService.HintSize="546,1012" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="UserName" />
       <Variable x:TypeArguments="x:String" Name="Password" />
@@ -99,19 +99,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="484,758.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OutUiElement="[out_Browser]" ScopeGuid="e3a60089-c04b-437f-b432-be5b7883ba2a" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="484,901.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OutUiElement="[out_Browser]" ScopeGuid="e3a60089-c04b-437f-b432-be5b7883ba2a" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,540" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,682" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,53.3333333333333" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter the user name : " Title="Username Input">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter the user name : " Title="Username Input">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[Username]</OutArgument>
               </ui:InputDialog.Result>
@@ -122,7 +122,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InputDialog>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Private: Input Dialog" sap:VirtualizedContainerService.HintSize="388,53.3333333333333" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="True" Label="Enter the password : " Title="Password Input">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Private: Input Dialog" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="True" Label="Enter the password : " Title="Password Input">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[Password]</OutArgument>
               </ui:InputDialog.Result>
@@ -133,7 +133,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InputDialog>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,53.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="e3a60089-c04b-437f-b432-be5b7883ba2a" Text="[UserName]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="e3a60089-c04b-437f-b432-be5b7883ba2a" Text="[UserName]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvType="InputBox" DesignTimeRectangle="180, 631, 728, 51" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT email'" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ' aaname='Email:' /&gt;" Guid="086d891d-c4e8-472a-ae63-a482705ea2a5" ImageBase64="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" InformativeScreenshot="b51665c79b9844bac037f0fa7feeb21d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -150,7 +150,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,53.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="e3a60089-c04b-437f-b432-be5b7883ba2a" Text="[Password]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="e3a60089-c04b-437f-b432-be5b7883ba2a" Text="[Password]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvType="InputBox" DesignTimeRectangle="180, 742, 728, 51" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ' aaname='Password:' /&gt;" Guid="d714afd9-3967-46a6-8d8d-a4346c44c4d6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAtwAAAA3CAYAAAA/tZ0BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAKSSURBVHhe7dvLTiJRGIXRfv9nkykjdeIAjFG0uEhQOZ1dwUqBaKTT/2ytZA9KC8ZfTg5/GgAAUEZwAwBAIcENAACFzgb3fD5v0+m0TSaTdnV1ZWZmZmZmZ5ZeTjenn79zFNzb7bb/wPX1df+hx8fH9vT01BaLhZmZmZmZjZZOTi/f39/3/ZyOTk+fOgruvHR3d9d/Qdd1bbVatfV6bWZmZmZmZ5ZeTjenn9PR6elTQ3DnRDtl/vLy0l5fX9tut2vv7+/9Pj4+zMzMzMxstM9WTjdvNpu+oz9viowNwZ0af3h46GM7X7Df7w//AQAAvpNuTnjnOkl6+vSUewjuXPjOkXheBgAALpOOTk+nq8eG4M6vLFPlTrYBAOBy6ej0dLp67Ci4c/9EcAMAwOXS0enpH4P77e3t8AQAAFwqPS24AQCgiOAGAIBCghsAAAoJbgAAKCS4AQCgkOAGAIBCghsAAAoJbgAAKCS4AQCgkOAGAIBCghsAAAoJbgAAKCS4AQCgkOAGAIBCghsAAAoJbgAAKCS4AQCgkOAGAIBCghsAAAoJbgAAKCS4AQCgkOAGAIBCghsAAAoJbgAAKCS4AQCgkOAGAIBCghsAAAoJbgAAKCS4AQCgkOAGAIBCghsAAAoJbgAAKCS4AQCgkOAGAIBCghsAAAoJbgAAKPRjcE8mk7bb7Q5PAADApdLT6eqxIbin02l7fn5u+/3+8BcAAOC30tHp6XT12BDc8/m83dzcCG4AAPgH6ej0dLp6bAjuSI3PZrPDEwAA8Fvp6NPT7TgK7u122790e3vblsul024AAPhBernrur6f09Hp6VNHwf0px+D5QC5851eWZmZmZmb2denldPPpNZKxs8ENAAD8D639Bbl2M+THPE5yAAAAAElFTkSuQmCC" InformativeScreenshot="e18ab8a340e7c69607ad71b7bf3a3080.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -167,7 +167,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="388,53.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e3a60089-c04b-437f-b432-be5b7883ba2a" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e3a60089-c04b-437f-b432-be5b7883ba2a" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvElementArea="177, 875, 93, 54" CvTextArea="196, 891, 54, 25" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="180, 878, 89, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="4cabf91e-8eae-4617-bb42-c180a4644264" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAA2CAYAAAClQpVaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANcSURBVHhe7ZxBaxNBFMf9RIJ69CuY79GLeBFEc+vNQ+nJoxWsgiKUVik51EgQIxJCqEhJKzZF24QQl6TZJUk3Zfk7b7Kb7KaTNGk3OxvzHvyQnXk71N/Mvp0N7N4AR+TB0jUES9cQSukvPu7h3vJ73HrwGjfvv2KmhLyRP/KoioD0P39NmXz38QZuP/qAO09SzBUhf+SRfJJXfwSky9X9cEM5CHM1yCd59UdfOl0KNDOqE5nrQV79paYvnWaDS8psIK/+1d6XTsVfdQITDuTXi750uuuqkplwIL9esPSIYOkaYOkaYOkaYOkaYOkaYOkaYOkaYOkaYOkaiED6MUpyVAubyv4I2TYgf82uHav7I4Kla2CxpMcElq6BmErP4mmugXLHkWfKOO+idHCE5MrF/MRWBfunXTdRRKeN3Oc8Nmt00EVu281VlZe8RS0o5TNIfmvA6MhDGeZpE6mtzCA3JGIoXciqurIdB2bdQqnahun5bxlY9YlPpFyRFK22yLVg2HTgwD6nfyeTbtQs0Gl2YAwRjvi719zckIid9CVXAloNrL/09a3sIlXrmbcrR0jI9h/4Ii06KBV23TYij/UTb+VPJl2Okc8P2sUYYj5lGMVdX/v1iZn0HNJ1mYz9r4rLeq2CsuwVY9Fq32nI1Yl6FUvDuSu/sS/naELpZg1Jr22ozzwsBtuvScyk/8J3aXFUrjcpPZHJ4hkdjJCScVfqhNLF1TM4N9j3n0u/PNd/c1w97JWQciF7aa5sGyNdKZZXOjHNSmfpIiaRPmVN/xReTV9g6dPuXorIyX318O4li2du6Vlw6UKWLfbOIygX99z8S/bpnSbe+ibDv08P7rHFuLzSx0fwPyaeSAtN8XTomRYxzRNpy0J656d7FbSR9h5uFke6LrzSM1lZi5L5lv6uBtqK2+JGuhzoyyBZ6D3Ww6hcvMlqZs5X+uBRncpPWdRzqunlltd2hrRXz2PEnEsXiF3N+oEFU/645YbThXFSxfM34f9CGAbzL30OYekaYOkaYOkaYOkaYOkaYOkaYOkaUErnVxpni/KVRn55d3aMfHmXX1OfHSNfU6eg2eAPMoTL2A8yUPCnR8KD/JFH8jn20yNe0KUgV70o/nTXZaaDvJE/f0nxh1I6xywD+AfB/jFx7aF8GgAAAABJRU5ErkJggg==" InformativeScreenshot="3f599acb64175fe3ca7d3fa292e4c2f8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.PointOffset>
@@ -182,6 +182,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,96" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Login Successful&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
